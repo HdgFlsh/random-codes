@@ -1,0 +1,8 @@
+.vscode
+.cph
+*.exe
+*.bin
+misc/*
+!misc/*.rar
+*.in
+*.out
