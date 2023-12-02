@@ -6,3 +6,5 @@ misc/*
 !misc/*.rar
 *.in
 *.out
+init.sh
+make_clean.bat
