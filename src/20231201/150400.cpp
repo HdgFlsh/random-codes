@@ -1,5 +1,5 @@
 // sdsyoj-555 / luogu-p3400
-// [ac]
+// [tle] / [ac]
 #include <iostream>
 #include <algorithm>
 using namespace std;
