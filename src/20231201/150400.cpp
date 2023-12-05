@@ -1,17 +1,40 @@
 // sdsyoj-555 / luogu-p3400
 // [tle] / [ac]
+#include <cstdio>
 #include <iostream>
 #include <algorithm>
 using namespace std;
 long long r;
 int n, m, st, l[3005], s[3005], c[3005];
 bool g[3005][3005];
+
+struct fiostream
+{
+    int q;
+};
+
+template<typename T>
+fiostream &operator>>(fiostream &input, T &r)
+{
+    char ch;
+    r = 0;
+    bool s = false;
+    while ((ch = getchar()) < '0' || ch > '9')
+        s |= ch == '-';
+    do
+        r = r * 10 + ch - '0';
+    while ((ch = getchar()) >= '0' && ch <= '9');
+    r *= (s ? -1 : 1);
+    return input;
+}
+
 int main()
 {
-    cin >> n >> m;
+    fiostream fcin;
+    fcin >> n >> m;
     for (int i = 0; i < n; i++)
         for (int j = 0; j < m; j++)
-            cin >> g[i][j];
+            fcin >> g[i][j];
     for (int j = 0; j < m; j++)
         l[j] = -1;
     for (int i = 0; i < n; i++)
