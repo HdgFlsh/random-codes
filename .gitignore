@@ -7,4 +7,5 @@ misc/*
 *.in
 *.out
 init.sh
+init.bat
 make_clean.bat
