@@ -1,5 +1,5 @@
 // luogu-p3865
-// [re]
+// [ac]
 #include <iostream>
 #include <cmath>
 #include <cstdio>
@@ -27,7 +27,7 @@ fiostream &operator>>(fiostream &input, T &r)
 }
 
 int n, m;
-array<array<int, 100005>, 21> a;
+array<array<int, 21>, 100005> a;
 int main(){
     fiostream fcin;
     fcin >> n >> m;
