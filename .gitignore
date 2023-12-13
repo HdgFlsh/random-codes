@@ -1,11 +1,7 @@
+misc/
 .vscode
 .cph
 *.exe
 *.bin
-misc/*
-!misc/*.rar
 *.in
 *.out
-init.sh
-init.bat
-make_clean.bat

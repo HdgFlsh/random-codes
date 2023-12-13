@@ -1,5 +1,5 @@
 // sdsyoj-1822
-// [uk]
+// [ac]
 #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <algorithm>
