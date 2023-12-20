@@ -1,3 +1,4 @@
+#!/bin/sh
 for i in "$@"
 do
     z=$i
@@ -16,4 +17,15 @@ do
         allmatch[${#allmatch[*]}]=$j
     done
 done
-echo "${allmatch[*]}" | tr ' ' '\n'  | sort -  | uniq -c | awk "\$1==$#{print \$2}"
+finalmatch=$(echo "${allmatch[*]}" | tr ' ' '\n'  | sort -  | uniq -c | awk "BEGIN{ORS=\" \"}\$1==$#{print \$2}" )
+for i in ${finalmatch[@]}
+do
+    echo "$i"
+    a=$(head -1 $i)
+    a=${a:3}
+    readarray -d / -t aa <<< "$a"
+    for j in ${aa[@]}
+    do
+        echo " - $j"
+    done
+done
