@@ -1,4 +1,4 @@
-[洛谷](https://www.luogu.com.cn/problem/P3400)
+[在 洛谷 提交](https://www.luogu.com.cn/problem/P3400)
 
 ## 题意
 
